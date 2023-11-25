@@ -45,24 +45,24 @@ class ProductManager {
     }
 }
 
-// Crear una instancia de ProductManager
+// instancia de ProductManager
 let productManager = new ProductManager();
 
-// Crear algunos productos
+// lista algunos productos
 let product1 = new Product('Manzana', 'Fruta ', 50, 'thumbnail1.jpg', 'code1', 15);
 let product2 = new Product('Banana', 'Fruta ', 60, 'thumbnail2.jpg', 'code2', 20);
 let product3 = new Product('Pera', 'Fruta ', 70, 'thumbnail3.jpg', 'code3', 10);
 
-// Agregar los productos al ProductManager
+// Agregar los productos
 productManager.addProduct(product1);
 productManager.addProduct(product2);
 productManager.addProduct(product3);
 
-// Buscar un producto por id
+// producto por id
 console.log(productManager.getProductById(1));
 console.log(productManager.getProductById(2));
 console.log(productManager.getProductById(3));
 
-// Mostrar todos los productos
+// todos los productos
 console.log(productManager.getProducts());
 
